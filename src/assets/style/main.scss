@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+tr,
+tbody,
+td {
+    min-height: 50px;
+    vertical-align: middle;
+}
+
+.page-layout {
+    .side-bar {
+        background: linear-gradient(to bottom, #112949, #3cc3f2);
+        padding: 8px;
+        padding-top: 12px;
+        .logo {
+            img {
+                max-width: 50px;
+            }
+        }
+    }
+    .main-content-page {
+        flex: 1;
+        min-height: 100vh;
+        .header {
+            header {
+                padding: 10px 20px;
+                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+                .assignment-name {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        display: inline-block;
+                        margin-right: 10px;
+                        img {
+                            width: 50px;
+                        }
+                    }
+                    p {
+                        font-size: 22px;
+                        font-weight: 600;
+                        margin-bottom: 0;
+                    }
+                    .file-name-icon {
+                        margin-left: 10px;
+                        img {
+                            width: 16px;
+                        }
+                    }
+                }
+                .profile {
+                    span {
+                        margin-right: 10px;
+                    }
+                    img {
+                        width: 50px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .main-content {
+            .list {
+                .editor-page {
+                    h1 {
+                        color: #112949;
+                        font-size: 40px;
+                        text-align: center;
+                        margin: 100px 0px;
+                    }
+                    .edit-section {
+                        position: relative;
+                        width: 75%;
+                        margin: 0px 30px;
+                        table {
+                            position: relative;
+                            thead {
+                                position: sticky;
+                                top: 0px;
+                                tr {
+                                    background: #112949;
+                                    color: #fff;
+                                }
+                            }
+                            tbody {
+                                .target-lang {
+                                    padding: 0;
+                                    max-width: 500px;
+                                    height: auto;
+                                    width: 500px;
+                                    div {
+                                        font-weight: 700;
+                                        margin-bottom: 0;
+                                        min-height: 50px;
+                                        input {
+                                            width: 100%;
+                                            min-height: 50px;
+                                            border: none;
+                                            outline: none;
+                                            box-shadow: none;
+                                            padding: 10px;
+                                        }
+                                    }
+                                }
+                                .segment {
+                                    &.active {
+                                        border: 1px solid #ea7f34;
+                                        .segment-num {
+                                            &.active-num {
+                                                background-color: #ea7f34;
+                                            }
+                                        }
+                                    }
+                                }
+                                .segment-num {
+                                    background-color: #dee2e666;
+                                }
+                            }
+                        }
+                        .paginate {
+                            text-align: right;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            span {
+                                width: 40px;
+                                height: 40px;
+                                margin: 0 5px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                &:hover {
+                                    background: #ccc;
+                                }
+                            }
+                            button {
+                                margin-left: 10px;
+                                background-color: #e97b2c;
+                                color: #fff;
+                                border: none;
+                                pad: 0px 20px;
+                            }
+                        }
+                    }
+                    .suggestion-section {
+                        width: 25%;
+                        margin: 0px 30px;
+                        .suggestion {
+                            min-height: 50px;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ----sidebar css--- */
+
+
+/* ----header css--- */
+
+
+/* ----main-content-page css--- */
